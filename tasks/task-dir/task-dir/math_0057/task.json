@@ -1,0 +1,7 @@
+{
+  "task_id": "math_0057",
+  "task_type": "math",
+  "instruction": "A warehouse stores 1752 boxes and several bags. The boxes are counted twice and the crates are inspected. How many bags does the warehouse have after the inspection? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 2,
+  "check": "exact_int"
+}

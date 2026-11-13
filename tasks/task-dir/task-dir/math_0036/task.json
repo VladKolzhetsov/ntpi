@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0036",
+  "task_type": "math",
+  "instruction": "Five workers can complete a job in 12 days. Assuming everyone works at the same constant rate, how many days would it take eight workers to complete the same job? Give the answer in whole days, rounded up to the nearest integer. Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 3,
+  "expected": "8",
+  "check": "exact_int"
+}

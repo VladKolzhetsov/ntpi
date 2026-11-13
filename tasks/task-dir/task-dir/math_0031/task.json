@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0031",
+  "task_type": "math",
+  "instruction": "An account starts with 5000 dollars and earns 6 percent simple interest per year (the interest is calculated on the initial amount only). What is the total amount in the account after 4 years, in whole dollars? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 2,
+  "expected": "6200",
+  "check": "exact_int"
+}

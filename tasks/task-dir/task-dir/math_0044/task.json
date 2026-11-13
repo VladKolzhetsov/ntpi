@@ -1,0 +1,7 @@
+{
+  "task_id": "math_0044",
+  "task_type": "math",
+  "instruction": "The sum of three numbers is 100 and their average is 40. What is the largest of the three numbers? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 4,
+  "check": "exact_int"
+}

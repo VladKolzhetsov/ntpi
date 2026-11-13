@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0014",
+  "task_type": "math",
+  "instruction": "An account starts with 1000 dollars. It earns 7 percent interest per year, compounded monthly (the monthly rate is the annual rate divided by 12). How much money is in the account after 5 years, in whole cents (rounded to the nearest cent)? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 5,
+  "expected": "141763",
+  "check": "exact_int"
+}

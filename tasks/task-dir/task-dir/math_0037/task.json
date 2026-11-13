@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0037",
+  "task_type": "math",
+  "instruction": "A rod is 150 centimetres long. Using 1 inch = 2.54 centimetres exactly, what is its length in inches, rounded to two decimal places (for example 1.23)? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 2,
+  "expected": "59.06",
+  "check": "exact_str"
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0033",
+  "task_type": "math",
+  "instruction": "A tank starts with 480 litres of water. First, exactly one quarter of the water is removed. Then, the amount that remains is tripled, and 60 litres are drawn off. How many litres of water are in the tank at the end? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 3,
+  "expected": "1020",
+  "check": "exact_int"
+}

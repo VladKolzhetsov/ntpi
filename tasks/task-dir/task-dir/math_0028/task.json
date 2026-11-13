@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0028",
+  "task_type": "math",
+  "instruction": "A store starts with 1000 items. During a sale it sells exactly half of them. It then restocks by tripling the number of items it has left and removing a further 100 items for damaged goods. How many items does the store have at the end? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 3,
+  "expected": "1400",
+  "check": "exact_int"
+}

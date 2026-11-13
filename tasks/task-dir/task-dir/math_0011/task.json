@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0011",
+  "task_type": "math",
+  "instruction": "A depot starts with 2000 crates. It splits the crates equally into 3 depots and keeps one share, rounded down. It then doubles its stock by merging with a sister depot. It then splits the stock equally into 4 depots and keeps one share, rounded down. It then triples its stock by merging with two sister depots. Finally it splits the stock equally into 2 depots and keeps one share, rounded down. How many crates does it have at the end? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 3,
+  "expected": "499",
+  "check": "exact_int"
+}

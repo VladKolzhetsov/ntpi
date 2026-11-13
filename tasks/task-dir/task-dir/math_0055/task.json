@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0055",
+  "task_type": "math",
+  "instruction": "A warehouse starts with 1752 boxes. It first increases its stock by 18 percent, discarding any fractional box (rounded down). Then it ships exactly 40 percent of the new stock, again discarding any fractional box (rounded down). Then it receives 3 deliveries of 87 boxes each. Then it splits the stock equally into 7 warehouses and keeps one share, rounded down. Then it doubles its stock by merging with a sister warehouse. Then it loses one eighth of its stock, rounded down. Then it ships 123 boxes. Then it triples its stock by merging with two sister warehouses. Then it returns 45 damaged boxes. Then it increases its stock by 9 percent, discarding any fractional box (rounded down). How many boxes does it have at the end? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 5,
+  "check": "exact_int",
+  "expected": "771"
+}

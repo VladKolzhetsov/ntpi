@@ -1,0 +1,6 @@
+order_id,region,product,month,units,price
+1,west,bolt,1,1,25
+2,west,bolt,1,1,40
+3,west,bolt,1,1,25
+4,west,bolt,1,1,12
+5,west,bolt,1,1,40

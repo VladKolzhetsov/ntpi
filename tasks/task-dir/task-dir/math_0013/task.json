@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0013",
+  "task_type": "math",
+  "instruction": "Two trains are 400 km apart on the same track and move towards each other. One travels at 55 km/h, the other at 65 km/h. After how many minutes do they meet? Round the answer to the nearest whole minute. Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 2,
+  "expected": "200",
+  "check": "exact_int"
+}

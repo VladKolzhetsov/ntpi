@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0051",
+  "task_type": "math",
+  "instruction": "A car travels at a constant speed of 54.6 km/h for exactly 2.5 hours. How many whole kilometres does it cover, rounded to the nearest whole kilometre? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 4,
+  "check": "exact_int",
+  "expected": "137"
+}

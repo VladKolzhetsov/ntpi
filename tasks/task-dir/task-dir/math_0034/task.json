@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0034",
+  "task_type": "math",
+  "instruction": "A machine runs at a constant speed of 1.5 kilometres every 10 minutes. How many kilometres does it cover in 90 minutes? Give the answer in kilometres rounded to one decimal place (for example 7.5). Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 2,
+  "expected": "13.5",
+  "check": "exact_str"
+}

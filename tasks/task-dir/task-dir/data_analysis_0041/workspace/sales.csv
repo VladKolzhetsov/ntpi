@@ -1,0 +1,5 @@
+order_id,region,product,month,units,price
+1,west,bolt,January,10,1.0
+2,west,bolt,March,7,1.0
+3,west,bolt,March,5,1.0
+4,west,bolt,May,9,1.0

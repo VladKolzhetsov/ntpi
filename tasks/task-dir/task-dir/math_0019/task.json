@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0019",
+  "task_type": "math",
+  "instruction": "A car travels at 25 miles per hour. Using 1 mile = 1609.344 metres, what is its speed in metres per second, rounded to three decimal places (for example 1.234)? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 3,
+  "expected": "11.176",
+  "check": "exact_str"
+}

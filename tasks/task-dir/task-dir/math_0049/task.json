@@ -1,0 +1,7 @@
+{
+  "task_id": "math_0049",
+  "task_type": "math",
+  "instruction": "A car is travelling at a certain speed for 3 hours and covers the whole distance between two towns. What is the distance in kilometres between the two towns? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 4,
+  "check": "exact_int"
+}

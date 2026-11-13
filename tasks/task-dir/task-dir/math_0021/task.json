@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0021",
+  "task_type": "math",
+  "instruction": "The average score of 8 students on a test is 72. After a ninth student takes the test the average of all 9 students becomes 73. What score did the ninth student get? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 2,
+  "expected": "81",
+  "check": "exact_int"
+}

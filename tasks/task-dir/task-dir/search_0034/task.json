@@ -1,0 +1,8 @@
+{
+  "task_id": "search_0034",
+  "task_type": "search",
+  "instruction": "The directory kb/ contains a knowledge base of markdown files. Each card identifies exactly one next location or resident using its fields. Which city did the resident of the apartment on the floor of the house in the sector of the city in the region of the country on the continent of the planet in the planetary system of the quadrant of the galaxy Aster Veil arrive from? Use the file tools or bash (ls, grep, cat) to find it. Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 5,
+  "expected": "Lumen Port",
+  "check": "exact_str"
+}

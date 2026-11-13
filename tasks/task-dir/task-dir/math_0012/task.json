@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0012",
+  "task_type": "math",
+  "instruction": "Train A leaves a station at 9:15 travelling at 62 km/h. Train B leaves the same station at 10:00 travelling in the same direction at 81 km/h. How many minutes does B take to catch up with A? Round the answer to the nearest whole minute. Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 3,
+  "expected": "147",
+  "check": "exact_int"
+}

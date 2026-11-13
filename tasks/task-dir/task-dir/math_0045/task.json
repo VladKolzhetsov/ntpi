@@ -1,0 +1,7 @@
+{
+  "task_id": "math_0045",
+  "task_type": "math",
+  "instruction": "A product originally cost some amount. Its price was first lowered by 20 percent and then the new price was raised by 20 percent. How many dollars does the product cost after both changes? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 5,
+  "check": "exact_int"
+}

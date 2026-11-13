@@ -1,0 +1,8 @@
+{
+  "task_id": "math_0029",
+  "task_type": "math",
+  "instruction": "A depot starts with 3000 parcels. It splits them equally into 7 depots and keeps one share, rounded down. It then multiplies its stock by 5 by merging with sister depots. It then returns 123 parcels to the sender. Finally it splits the stock equally into 3 depots and keeps one share, rounded down. How many parcels does it have at the end? Compute it with the bash tool (python3 -c). Work only inside the current directory. When you are done, write ONLY the final answer to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 3,
+  "expected": "672",
+  "check": "exact_int"
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "coding_0047",
+  "task_type": "coding",
+  "instruction": "Fix the bugs in mylib.py until all tests pass. Work only inside the current directory. When you are done, write ONLY the word DONE to the file answer.txt in the current directory (for example with bash: echo 42 > answer.txt).",
+  "reward": 3,
+  "check": "unittest"
+}
