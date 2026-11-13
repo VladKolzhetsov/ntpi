@@ -5,8 +5,9 @@
 # 0) В .env указать свой API_KEY, затем **в корне проекта выполнить последовательно:**  
 
 # 1) сборка образа
+```
 docker build -t hack:latest .
-
+```
 # 2) копия 4 тренировочных задач (набор не портим) + права на запись
 rm -rf /tmp/check-tasks && mkdir -p /tmp/check-tasks
 cp -r tasks/task-dir/task-dir/{search_0001,math_0000,data_analysis_0002,coding_0003} \
