@@ -9,13 +9,16 @@
 docker build -t hack:latest .
 ```
 # 2) копия 4 тренировочных задач (набор не портим) + права на запись
+```
 rm -rf /tmp/check-tasks && mkdir -p /tmp/check-tasks
 cp -r tasks/task-dir/task-dir/{search_0001,math_0000,data_analysis_0002,coding_0003} \
       /tmp/check-tasks/
 rm -f /tmp/check-tasks/*/answer.txt /tmp/check-tasks/*/workspace/answer.txt
 chmod -R 777 /tmp/check-tasks
+```
 
 # 3) прогон с флагами организаторов
+```
 docker run --rm --name run-check \
   --env-file .env \
   -v /tmp/check-tasks:/data/tasks:rw \
@@ -24,9 +27,13 @@ docker run --rm --name run-check \
   --cpus 8 --memory 16g --pids-limit 512 \
   --workdir /app --entrypoint python \
   hack:latest /app/run_agent.py --tasks-dir /data/tasks
+```
 
 # 4) ответы должны лежать на хосте
+```
 cat /tmp/check-tasks/*/answer.txt
+```
+
 Ожидаемо: решено (answer.txt): 4/4, 11 баллов, ~500 экв. за ~15 с, и вывод DONE 158 389 1983.
 Что здесь важно
 - --env-file .env — ключевой момент. В .env ключи называются API_BASE/API_KEY, а клиент умеет их fallback'ом читать. Если вместо этого писать -e LLM_BASE_URL="$API_BASE" в терминале без экспортированного .env, переменная уедет пустой → падение с кодом 4.
@@ -36,9 +43,13 @@ cat /tmp/check-tasks/*/answer.txt
 
 Вариант с явными переменными
 Если хотите передавать боевые имена LLM_*:
+```
 set -a && . ./.env && set +a          # экспортировать .env в текущую оболочку
+```
+```
 echo "${#API_KEY}"                    # не должен быть 0
-
+```
+```
 docker run --rm \
   -e LLM_BASE_URL="$API_BASE" -e LLM_API_KEY="$API_KEY" \
   -v /tmp/check-tasks:/data/tasks:rw \
@@ -46,21 +57,29 @@ docker run --rm \
   --cap-drop ALL --security-opt no-new-privileges \
   --workdir /app --entrypoint python \
   hack:latest /app/run_agent.py --tasks-dir /data/tasks
+```
+
 Дополнительно
 # сохранить отчёт на хосте (организаторы $OUT не монтируют)
+```
 mkdir -p /tmp/check-out && chmod 777 /tmp/check-out
 #   ...добавьте к команде: -v /tmp/check-out:/out:rw -e OUT=/out
 cat /tmp/check-out/run_report.json
+```
 
 # проверить, что ключ доехал до контейнера
+```
 docker run --rm --env-file .env --entrypoint sh hack:latest -c 'echo ${#API_KEY}'
+```
 
 # больше задач (первые 8 по порядку триажа)
 #   ...замените хвост команды на: /app/run_agent.py --tasks-dir /data/tasks --limit 8
 
 # 0 токенов: только порядок триажа
+```
 docker run --rm --env-file .env -v /tmp/check-tasks:/data/tasks \
   --entrypoint python hack:latest /app/run_agent.py --tasks-dir /data/tasks --dry-run
+```
 
 
 # openJiuwen Challenge 2026 — токен-эффективный харнесс
